@@ -1,0 +1,14 @@
+  <html>
+  <head>
+    <p>test</p>
+    <script>
+      window.onload = function() {
+      window.document.body.style.margin = '0';
+        window.document.body.style.height = '100vh';
+        window.navigator.serviceWorker.register('../sw.js', {
+        scope: '/service/',
+        });
+          };
+    </script>
+  </head>
+</html>
